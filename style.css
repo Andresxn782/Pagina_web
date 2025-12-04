@@ -1,0 +1,161 @@
+body {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-emphasis: center;
+  background-color: beige;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  color: #333;
+}
+
+.header h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.header h3 {
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 8px;
+  color: #555;
+}
+
+/* DESCRIPCIÓN AÑADIDA */
+.descripcion {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #444;
+  text-align: center;
+  max-width: 600px;
+}
+
+/* BAJA LOS RECTÁNGULOS */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  gap: 16px;
+  transition: 0.3s;
+  margin-top: 40px; /* ← añadido para bajar todo */
+}
+
+.container li {
+  position: relative;
+  overflow: hidden;
+  flex: 0 0 120px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1.2px solid white;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.4), -2px -5px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.container li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+.container li img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.container li .content {
+  transition: 1.5s ease;
+}
+
+.container span {
+  text-align: center;
+  width: 75%;
+}
+
+.container h2 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 4px;
+  margin-bottom: 3px;
+  white-space: nowrap;
+  color: white;
+}
+
+.container p {
+  color: white;
+  font-size: 10px;
+  width: 100%;
+}
+
+.container li .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  color: white;
+  padding: 15px;
+  background: linear-gradient(0deg, rgb(0 0 0 / 70%) 10%, rgb(255 255 255 / 0%) 100%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.container:hover {
+  gap: 0;
+}
+
+.container li .content span {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 0px;
+  translate: -50%;
+  scale: 0.85;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container li:hover {
+  flex: 0 1 260px;
+  scale: 1.1;
+}
+
+.container li:hover .content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.container li:hover span {
+  scale: 1;
+  opacity: 1;
+  visibility: visible;
+}
+.tech-logos {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.tech-logos img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
