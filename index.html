@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -127,7 +127,9 @@
         flex-direction: column; /* FIX */
         height: 100%; /* FIX */
 
-        transition: transform 0.5s ease-out, box-shadow 0.5s ease-out;
+        transition:
+          transform 0.5s ease-out,
+          box-shadow 0.5s ease-out;
       }
 
       .project-card:hover {
@@ -181,7 +183,9 @@
         color: var(--beige);
         text-decoration: none;
         font-size: 1rem;
-        transition: opacity 0.4s ease, transform 0.4s ease;
+        transition:
+          opacity 0.4s ease,
+          transform 0.4s ease;
       }
 
       .socials a:hover {
@@ -247,35 +251,60 @@
     <section id="proyectos">
       <h2>Proyectos</h2>
       <div class="projects-grid">
-        <a class="project-card" href="./anterior/index.html" target="_blank">
-          <img src="fronted.png" alt="Proyecto Portafolio" />
+        <a
+          class="project-card"
+          href="./pagina descripciones/proyecto1portafolio.html"
+          target="_blank"
+        >
+          <img src="./imagenes/fronted.png" alt="Proyecto Portafolio" />
           <div class="project-content">
             <h3>Portafolio</h3>
             <p>Front utilizable de un Portafolio</p>
           </div>
         </a>
 
-        <a class="project-card" href="#" target="_blank">
-          <img src="aplicacion contabilidad.png" alt="Proyecto 2" />
+        <a
+          class="project-card"
+          href="./pagina descripciones/proyecto2dashborad.html"
+          target="_blank"
+        >
+          <img src="./imagenes/dashboard.png" alt="Proyecto 2" />
           <div class="project-content">
-            <h3>Aplicacion de contabilidad personal</h3>
-            <p>Esta Aplicacionva dirigida a jovenes con pocos gastos.</p>
+            <h3>Admin Dashboard</h3>
+            <p>
+              Panel interactivo para gestionar usuarios, métricas y datos en tiempo real de manera
+              eficiente.
+            </p>
           </div>
         </a>
 
-        <a class="project-card" href="#" target="_blank">
-          <img src="aplicacion contabilidad.png" alt="Proyecto 3" />
+        <a
+          class="project-card"
+          href="./pagina descripciones/proyecto4novastudio.html"
+          target="_blank"
+        >
+          <img src="./imagenes/novastudio.png" alt="Proyecto 3" />
           <div class="project-content">
-            <h3>Proyecto Tres</h3>
-            <p>Dashboard con visualización de datos y métricas en tiempo real.</p>
+            <h3>NovaStudio</h3>
+            <p>
+              Dashboard creativo con visualización de métricas y proyectos en tiempo real para
+              estudios.
+            </p>
           </div>
         </a>
 
-        <a class="project-card" href="#" target="_blank">
-          <img src="aplicacion contabilidad.png" alt="Proyecto 4" />
+        <a
+          class="project-card"
+          href="./pagina descripciones/proyecto3focuslyapp.html"
+          target="_blank"
+        >
+          <img src="./imagenes/focuslyapp.png" alt="Proyecto 4" />
           <div class="project-content">
-            <h3>Proyecto Cuatro</h3>
-            <p>Sitio corporativo con identidad visual sobria y profesional.</p>
+            <h3>Focusly App</h3>
+            <p>
+              Aplicación de productividad que organiza tareas, bloques de tiempo y seguimiento de
+              hábitos.
+            </p>
           </div>
         </a>
       </div>

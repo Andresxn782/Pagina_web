@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f6fa;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #111;
+  color: white;
+  padding: 2rem;
+}
+
+.brand {
+  margin-bottom: 2rem;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 1rem;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.sidebar .active {
+  opacity: 1;
+  font-weight: bold;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  padding: 2rem 3rem;
+}
+
+/* Topbar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+/* Stats */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.stat-card p {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Activity */
+.activity {
+  margin-bottom: 3rem;
+}
+
+.activity ul {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+}
+
+/* Table */
+.table-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table th,
+table td {
+  padding: 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}

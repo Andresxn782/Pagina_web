@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Contenedor general -->
+    <div class="dashboard">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h2 class="brand">Admin</h2>
+
+        <!-- Navegación lateral -->
+        <nav>
+          <ul>
+            <li class="active">Dashboard</li>
+            <li>Usuarios</li>
+            <li>Pedidos</li>
+            <li>Configuración</li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Área principal -->
+      <main class="main">
+        <!-- Barra superior -->
+        <header class="topbar">
+          <h1>Dashboard</h1>
+          <span class="user">Admin User</span>
+        </header>
+
+        <!-- Métricas -->
+        <section class="stats">
+          <div class="stat-card">
+            <h3>Ingresos</h3>
+            <p>2.450€</p>
+            <span>Este mes</span>
+          </div>
+
+          <div class="stat-card">
+            <h3>Usuarios</h3>
+            <p>428</p>
+            <span>Total</span>
+          </div>
+
+          <div class="stat-card">
+            <h3>Pedidos</h3>
+            <p>89</p>
+            <span>Pendientes</span>
+          </div>
+        </section>
+
+        <!-- Actividad reciente -->
+        <section class="activity">
+          <h2>Actividad reciente</h2>
+
+          <ul>
+            <li>Nuevo usuario registrado</li>
+            <li>Pedido #104 completado</li>
+            <li>Actualización de perfil</li>
+          </ul>
+        </section>
+
+        <!-- Tabla simple -->
+        <section class="table-section">
+          <h2>Últimos pedidos</h2>
+
+          <table>
+            <tr>
+              <th>ID</th>
+              <th>Cliente</th>
+              <th>Estado</th>
+            </tr>
+            <tr>
+              <td>#101</td>
+              <td>Juan</td>
+              <td>Completado</td>
+            </tr>
+            <tr>
+              <td>#102</td>
+              <td>Ana</td>
+              <td>Pendiente</td>
+            </tr>
+          </table>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
