@@ -71,6 +71,7 @@
         color: var(--beige-soft);
       }
 
+      /* ===== SECCIONES ===== */
       section {
         max-width: 1100px;
         margin: auto;
@@ -78,9 +79,9 @@
         text-align: center;
       }
 
+      /* ===== HERO ===== */
       .hero {
-        padding: 6rem 2rem 4rem; /* Igual que las demás secciones */
-        margin-top: -4rem; /* Compensa el header fijo sin romper la simetría */
+        padding: 9rem 2rem 2rem; /* Mantiene el nombre donde estaba y espacio igual */
       }
 
       .hero h1 {
@@ -100,6 +101,7 @@
         margin-bottom: 1.5rem;
       }
 
+      /* ===== SOBRE MI ===== */
       .about p {
         max-width: 700px;
         margin: 0 auto;
@@ -109,6 +111,7 @@
       /* ===== TECNOLOGÍAS ===== */
       .skills {
         padding-top: 2rem;
+        padding-bottom: 4rem; /* Espacio igual entre secciones */
       }
 
       .skills-grid {
@@ -200,6 +203,7 @@
         color: var(--beige-soft);
       }
 
+      /* ===== REDES ===== */
       .socials {
         display: flex;
         justify-content: center;
@@ -230,6 +234,7 @@
         fill: var(--beige);
       }
 
+      /* ===== RESPONSIVE ===== */
       @media (max-width: 900px) {
         .projects-grid {
           grid-template-columns: 1fr;
@@ -262,11 +267,13 @@
       </nav>
     </header>
 
+    <!-- HERO -->
     <section class="hero">
       <h1>Andrés Ruiz</h1>
       <div class="divider"></div>
     </section>
 
+    <!-- SOBRE MI -->
     <section id="sobre-mi" class="about">
       <h2>Sobre mí</h2>
       <p>
@@ -279,9 +286,9 @@
       </p>
     </section>
 
-    <!-- NUEVA SECCIÓN TECNOLOGÍAS -->
+    <!-- TECNOLOGÍAS -->
     <section class="skills">
-      <h2>Tecnologias</h2>
+      <h2>Tecnologías</h2>
       <div class="skills-grid">
         <div class="skill">
           <img
@@ -328,6 +335,7 @@
       </div>
     </section>
 
+    <!-- PROYECTOS -->
     <section id="proyectos">
       <h2>Proyectos</h2>
       <div class="projects-grid">
@@ -342,7 +350,6 @@
             <p>Front utilizable de un Portafolio</p>
           </div>
         </a>
-
         <a
           class="project-card"
           href="./pagina descripciones/proyecto2dashborad.html"
@@ -357,7 +364,6 @@
             </p>
           </div>
         </a>
-
         <a
           class="project-card"
           href="./pagina descripciones/proyecto4novastudio.html"
@@ -372,7 +378,6 @@
             </p>
           </div>
         </a>
-
         <a
           class="project-card"
           href="./pagina descripciones/proyecto3focuslyapp.html"
@@ -390,6 +395,7 @@
       </div>
     </section>
 
+    <!-- REDES -->
     <section id="contacto" class="socials">
       <a href="https://github.com/Andresxn782" target="_blank">
         <svg viewBox="0 0 24 24">
